@@ -63,7 +63,7 @@
         },
         {
           "Key": "MM:Summary",
-          "Value": "Summary: {{ActiveDocument.summary}}"
+          "Value": "{{ActiveDocument.summary}}"
         },
         {
           "Key": "MM:Title",
