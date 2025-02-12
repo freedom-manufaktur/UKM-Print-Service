@@ -11,11 +11,7 @@
       "Properties": [
         {
           "Key": "Oktopus.JsonContentResultVariableName",
-          "Value": "Document"
-        },
-        {
-          "Key": "Oktopus.ResultVariableName",
-          "Value": "HttpRequest"
+          "Value": "ActiveDocument"
         },
         {
           "Key": "Oktopus.WebhookAllowAnonymousAccess",
@@ -58,24 +54,20 @@
           "Value": "{{DocumentTemplate}}"
         },
         {
-          "Key": "MM:DocDescription",
-          "Value": "{{Document.summary}}"
-        },
-        {
-          "Key": "MM:DocId",
-          "Value": "{{Document.id}}"
-        },
-        {
-          "Key": "MM:DocTitle",
-          "Value": "{{Document.title}}"
-        },
-        {
-          "Key": "MM:DocVersion",
-          "Value": "{{Document.version}}"
-        },
-        {
           "Key": "MM:HTML:Document",
-          "Value": "{{Document.content | array.join \u0022\\n\u0022}}"
+          "Value": "{{ActiveDocument.content | array.join \u0022\\n\u0022}}"
+        },
+        {
+          "Key": "MM:Id",
+          "Value": "{{ActiveDocument.id}}"
+        },
+        {
+          "Key": "MM:Summary",
+          "Value": "Summary: {{ActiveDocument.summary}}"
+        },
+        {
+          "Key": "MM:Title",
+          "Value": "{{ActiveDocument.title | string.truncatewords 17 | string.truncate 130}}"
         },
         {
           "Key": "ResultFileFormatExpression",
