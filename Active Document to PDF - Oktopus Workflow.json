@@ -67,7 +67,7 @@
         },
         {
           "Key": "MM:Title",
-          "Value": "{{ActiveDocument.title | string.truncatewords 17 | string.truncate 130}}"
+          "Value": "{{ActiveDocument.title | string.TruncateSmart 130}}"
         },
         {
           "Key": "ResultFileFormatExpression",
