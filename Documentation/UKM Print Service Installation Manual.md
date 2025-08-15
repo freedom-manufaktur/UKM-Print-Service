@@ -11,10 +11,10 @@ Table of contents
   - [First time Installation](#first-time-installation)
   - [Upgrade an existing Installation](#upgrade-an-existing-installation)
   - [Unattended (silent) Installation / Upgrade](#unattended-silent-installation--upgrade)
-- [Service Configuration](#service-configuration)
-- [Monitoring / Debugging](#monitoring--debugging)
-- [Knowledge Center Admin - Configure Service URL](#knowledge-center-admin---configure-service-url)
-- [Use the service](#use-the-service)
+  - [Monitoring / Debugging](#monitoring--debugging)
+- [2. Service Configuration](#2-service-configuration)
+- [3. Knowledge Center Admin - Configure Service URL](#3-knowledge-center-admin---configure-service-url)
+- [4. How to print an Active Document](#4-how-to-print-an-active-document)
 - [What's new?](#whats-new)
   - [\[1.0.0\] - 2025-08-15](#100---2025-08-15)
 - [Need support?](#need-support)
@@ -79,7 +79,17 @@ PS> Start-Process 'UKM Print Service Setup 1.0.0.exe' -ArgumentList '-uninstall 
 ```
 > Note: Instead of `-silent` you may use `-passive` to see the progress.
 
-# Service Configuration
+## Monitoring / Debugging
+
+The installation creates a new Windows Service that should be running for the service to be available
+
+![Windows Service](Images/Windows%20Service.png)
+
+The installation also creates a new Windows Event Log source `UKM Print Service`. Please start the *Event Viewer* or any other Event Log monitoring tool to view the application logs.
+
+![Event Log](Images/Windows%20Service%20Event%20Log.png)
+
+# 2. Service Configuration
 > By default, the service should run out of the box, without any need for configuration.
 
 If port `8048` (default) is already in use or you want to set any other option, then navigate to the directory \
@@ -102,34 +112,14 @@ Editing `appsettings.json` will show something like
 As seen in the example, the URL has been re-configured to use http://localhost:8148 as address and detailed error messages have been enabled.
 > Note: After changing `appsettings.json` you must restart the `UKM Print Service` Service.
 
-# Monitoring / Debugging
-
-The installation creates a new Windows Service that should be running for the service to be available
-
-![Windows Service](Images/Windows%20Service.png)
-
-The installation also creates a new Windows Event Log source `UKM Print Service`. Please start the *Event Viewer* or any other Event Log monitoring tool to view the application logs.
-
-![Event Log](Images/Windows%20Service%20Event%20Log.png)
-
-# Knowledge Center Admin - Configure Service URL
-By default the service should be running under the URL `http://localhost:8048`.
+# 3. Knowledge Center Admin - Configure Service URL
+By default the print endpoint should be running under the URL `http://localhost:8048/api/print-to-pdf`.
 You can configure this URL (or another one) in the Knowledge Center Admin interface.
-Enter the full URL
+![Print Service URL setting](<Images/Knowledge Base Admin - Print Service URL.png>)
 
-
-
- TODO hier / api/print-to-pdf
-
-
-
-
- 
-![alt text](<Images/Knowledge Base Admin - Print Service URL.png>)
-
-# Use the service
-TODO
-![alt text](<Images/Knowledge Base - Print Active Document.png>)
+# 4. How to print an Active Document
+After configuring the Service URL, a new menu entry appears in the document overview.
+![Print Active Document](<Images/Knowledge Base - Print Active Document.png>)
 
 # What's new?
 This section lists **important** changes to the documentation.
