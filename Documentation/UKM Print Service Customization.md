@@ -16,6 +16,8 @@ The *UKM Print Service* provides a default template for printing *Active Documen
 You might want to change this template to fit your corporate identity guidelines.
 This is possible by simply changing a Microsoft Word file (`.docx`) with the design that fits your needs.
 
+You might take a look at the [default template here](<../Downloads/Active Document PDF Template.docx>).
+
 Please contact us at [support@freedom-manufaktur.com](mailto:support@freedom-manufaktur.com) to get your *UKM Print Service* license and instruction on how install your own template.
 
 # Need support?
