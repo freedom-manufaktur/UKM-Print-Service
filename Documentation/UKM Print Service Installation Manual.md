@@ -114,11 +114,11 @@ As seen in the example, the URL has been re-configured to use http://localhost:8
 
 # 3. Knowledge Center Admin - Configure Service URL
 By default the print endpoint should be running under the URL `http://localhost:8048/api/print-to-pdf`.
-You can configure this URL (or another one) in the Knowledge Center Admin interface.
+You can configure this URL (or another one) in the Knowledge Center Admin interface in the **Service URL for generating PDFs for AD** setting.
 ![Print Service URL setting](<Images/Knowledge Base Admin - Print Service URL.png>)
 
 # 4. How to print an Active Document
-After configuring the Service URL, a new menu entry appears in the document overview.
+After configuring the Service URL, a new menu entry - **Print Active Document(s)** - appears in the document overview.
 ![Print Active Document](<Images/Knowledge Base - Print Active Document.png>)
 
 # What's new?
