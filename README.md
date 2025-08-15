@@ -5,7 +5,7 @@ https://freedom-manufaktur.com/
 
 # Documentation
 - [Installation](<Documentation/UKM Print Service Installation Manual.md>) 🚀 - Install UKM Print Service on your server.
-- [PDF Template customization](<Documentation/TODO.md>) 🎨 - Customize the PDF template to your needs.
+- [PDF Template customization](<Documentation/UKM Print Service Customization.md>) 🎨 - Customize the PDF template to your needs.
 
 Happy printing.
 

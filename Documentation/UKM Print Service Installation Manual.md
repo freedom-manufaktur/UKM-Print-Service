@@ -15,6 +15,7 @@ Table of contents
 - [2. Service Configuration](#2-service-configuration)
 - [3. Knowledge Center Admin - Configure Service URL](#3-knowledge-center-admin---configure-service-url)
 - [4. How to print an Active Document](#4-how-to-print-an-active-document)
+- [Next steps](#next-steps)
 - [What's new?](#whats-new)
   - [\[1.0.0\] - 2025-08-15](#100---2025-08-15)
 - [Need support?](#need-support)
@@ -23,20 +24,14 @@ Table of contents
 # 1. Installation
 ## First time Installation
 1.  Download Installation from [UKM Print Service Download](https://freedommanufaktur.sharepoint.com/:f:/g/EhMX6-rpTWxGrZTHbR4M7egBmjveMyi0xERXPiohuq8OTw?e=pJnNZ9)
-2.  *(Optional, when offline*) Download and install the most recent [.NET 9.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
-    1. ASP.NET Core Runtime x64 Installer
-    2. .NET Runtime x64 Installer
-3.	Install `UKM Print Service Setup 1.0.0.exe`
-    > Note: This will automatically install .NET 9.0 if necessary
-4.  (Optional, verify running) Open a browser and navigate to \
+2.	Install `UKM Print Service Setup 1.0.0.exe`
+3.  (Optional, verify running) Open a browser and navigate to \
     http://localhost:8048 \
     You should be greeted with the message\
     `Welcome to the UKM Print Service`
 
 ## Upgrade an existing Installation
-1.	(Optional, when Offline) Download and install the most recent [.NET 9.0 Runtimes](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
-    1.  ASP.NET Core Runtime x64 Installer
-    2.	.NET Runtime x64 Installer
+1.  Download Installation from [UKM Print Service Download](https://freedommanufaktur.sharepoint.com/:f:/g/EhMX6-rpTWxGrZTHbR4M7egBmjveMyi0xERXPiohuq8OTw?e=pJnNZ9)
 2.	Install `UKM Print Service Setup vNext.exe` \
     This will upgrade your existing installation.
 
@@ -120,6 +115,10 @@ You can configure this URL (or another one) in the Knowledge Center Admin interf
 # 4. How to print an Active Document
 After configuring the Service URL, a new menu entry - **Print Active Document(s)** - appears in the document overview.
 ![Print Active Document](<Images/Knowledge Base - Print Active Document.png>)
+
+# Next steps
+This might interest you as a next step
+- [PDF Template customization](<UKM Print Service Customization.md>) 🎨 - Customize the PDF template to your needs.
 
 # What's new?
 This section lists **important** changes to the documentation.
